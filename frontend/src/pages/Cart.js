@@ -6,6 +6,9 @@ const Cart = () => {
     const cartItems = useSelector((state) => state.cart.cartItems); // Access cart items from Redux state
     const dispatch = useDispatch(); // Redux dispatch function
 
+    // Debugging: Log cart items to console
+    console.log('Cart Items:', cartItems);
+
     // Handle quantity change
     const handleQuantityChange = (id, quantity) => {
         if (quantity > 0) {

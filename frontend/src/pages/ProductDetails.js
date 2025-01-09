@@ -21,6 +21,7 @@ const ProductDetails = () => {
 
     // Add product to cart with default quantity of 1
     const handleAddToCart = () => {
+        console.log('Adding to Cart:', { ...product, quantity: 1 }); // Debugging
         dispatch(addToCart({ ...product, quantity: 1 }));
     };
 
